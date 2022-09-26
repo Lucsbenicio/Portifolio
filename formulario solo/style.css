@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;  /* (10 px) */
+  /*rem = unidade de medida*/
+}
+
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-bottom: 3.9rem;
+  
+}
+
+header h1{
+font-family: 'Staatliches', cursive;
+
+font-style: normal;
+font-weight: bold;
+font-size: 3rem;
+line-height: 4.2rem;
+margin-top: 2rem;
+margin-bottom: 19px;
+
+}
+
+header p{
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 2.4rem;
+margin-bottom: 1.5rem;
+
+}
+
+image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+body, input, select, textarea{
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+
+}
+
+body{
+  background: #BFD7E4;
+
+
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 355px;
+
+  position: absolute;
+  z-index: -1 ;
+  background:  #f3887c;
+
+}
+
+form{
+  background: white;
+  min-height: 30rem;
+  width: 750px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+fieldset{
+  border: none;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  flex-direction:column ;
+  gap: 2.4rem;
+}
+
+fieldset legend{
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  
+  display: flex;
+  align-items: center;
+  flex-direction:column ;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 15px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-wrapper label,
+.checkbox-wrapper label{
+ font-size: 14px;
+ line-height: 24px;
+
+ color: #4E4958;
+ margin-bottom: 0.8rem;
+ margin-top: 0.6rem;
+}
+
+.input-wrapper label span{
+  padding-left: 7px;
+  line-height: 20px;
+
+
+ color: #6f6d72;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select{
+  background: #FAFAFC;
+
+ border: 1px solid #a9a9ad;
+ border-radius: 8px;
+
+ height: 55px;
+
+ padding: 0 24px;
+
+ font-size: 14px;
+ line-height: 26px;
+
+ color: #6c6a71;
+}
+
+.input-wrapper textarea{
+  padding: 10px 24px;
+  height: 160px;
+
+}
+
+.input-wrapper select{
+  background: #FAFAFC;
+
+  border: 1px solid #a9a9ad;
+  border-radius: 8px;
+ 
+  height: 55px;
+ 
+  padding: 0 24px;
+ 
+  font-size: 14px;
+  line-height: 26px;
+ 
+  color: #6c6a71;
+}
+
+.input-wrapper select{
+  appearance: none;
+
+  background-repeat: no-repeat;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  
+  background-position: right 24px top 50%;
+
+}
+
+.col-3{
+  display: flex;
+  gap: 32px;
+}
+
+.col-3 > div:nth-child(1){
+  width: 100%;
+}
+
+.checkbox-wrapper{
+  position:relative;
+}
+
+.checkbox-wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  display: flex;
+
+}
+
+.checkbox-wrapper input{
+  position:absolute;
+
+  width: 24px;
+  height: 24px; 
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+
+  border: 1px solid #E6E6F0; 
+  border-radius: 8px;
+
+}
+
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 50% top 50%;
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+
+}
+
+button{
+  border: none;
+  background-color: #f3887c;
+  color: white;
+  font-family: 'Staatliches';
+  font-size: 20px;
+  border-radius: 8px;
+
+  width: 100%;
+  height: 50px; 
+
+  margin-top: 40px;
+
+}
+
+button:hover{
+  background-color: #d4776c;
+
+}
+
+input:invalid{
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
