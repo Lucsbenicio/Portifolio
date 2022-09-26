@@ -1,0 +1,88 @@
+*{
+  margin:0;
+
+}
+
+
+:root{
+  font-size: 62.5%;  /* (10 px) */
+  /*rem = unidade de medida*/
+}
+
+
+
+body {
+background-color: rgb(0, 0, 0);
+text-align: center;
+font-size: 1.5rem;
+color: white;
+font-family: sans-serif;
+
+}
+
+
+#container{
+  width: 80%;
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-top: 10rem;
+
+ 
+  
+}
+
+h1{
+  margin-top: 4rem ;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+p{
+  margin-bottom: 4rem;
+  opacity: 0.7;
+}
+
+button{
+ background-color: blueviolet;
+ color: white;
+ margin-top: 2rem;
+ border: none;
+ transition: filter .3s ;
+ 
+ 
+}
+
+input, button{
+  display: block;
+  width: 100%;
+  border-radius: 4px ;
+  height: 5.6rem;
+  font-size: 2rem;
+
+
+}
+input{
+  width: 94%;
+  border: none;
+  padding-left: 2rem;
+}
+
+button:hover{
+  filter: brightness(1.2);
+}
+
+#resposta{
+  margin-top: 3rem;
+  transition: opacity 1s;
+  
+}
+
+
+#resposta div{
+  font-size: 1.6rem;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+
+}
+
